@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Тест на професійне вигорання</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<main class="container">
+
+    <!-- ======================
+            DESCRIPTION
+    ======================= -->
+
+    <section class="intro">
+
+        <p>
+
+            Тест на вигоряння за методикою американського психолога Крістіни Маслач
+            (Maslach Burnout Inventory, MBI)
+            показує ступінь професійного вигорання за трьома шкалами:
+            <strong>емоційне виснаження</strong>,
+            <strong>деперсоналізація</strong>
+            та
+            <strong>редукція особистих досягнень.</strong>
+
+            Проходження займає близько
+            <strong>3 хвилин.</strong>
+
+        </p>
+
+        <p>
+
+            Вигоряння — це не слабкість і не лінощі.
+            Це стан, у якому людина систематично витрачає
+            більше енергії, ніж відновлює.
+
+            Тест допоможе оцінити ваш стан за трьома шкалами
+            та визначити, яка сфера потребує найбільшої уваги.
+
+        </p>
+
+    </section>
+
+    <!-- ======================
+            TEST
+    ======================= -->
+
+    <section id="testSection">
+
+        <div class="progress-wrapper">
+
+            <div class="progress-top">
+
+                <span id="questionCounter">
+
+                    Питання 1 із 22
+
+                </span>
+
+                <span id="progressPercent">
+
+                    5%
+
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question-card">
+
+            <h2 id="questionText">
+
+                Текст питання
+
+            </h2>
+
+            <div
+                id="answers"
+                class="answers">
+
+            </div>
+
+        </div>
+
+
+        <div class="navigation">
+
+            <button
+                id="prevBtn"
+                class="secondary-btn">
+
+                Назад
+
+            </button>
+
+            <button
+                id="nextBtn"
+                class="primary-btn">
+
+                Далі
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================
+          RESULTS
+    ======================= -->
+
+    <section
+        id="resultSection"
+        class="hidden">
+
+        <h2>
+
+            Результати
+
+        </h2>
+
+        <div class="result-grid">
+
+            <div
+                id="cardEE"
+                class="result-card">
+
+                <h3>
+
+                    Емоційне виснаження
+
+                </h3>
+
+                <div class="circle">
+
+                    <svg
+                        width="170"
+                        height="170">
+
+                        <circle
+                            class="bg"
+                            cx="85"
+                            cy="85"
+                            r="70"></circle>
+
+                        <circle
+                            id="circleEE"
+                            class="progress"
+                            cx="85"
+                            cy="85"
+                            r="70"></circle>
+
+                    </svg>
+
+                    <div class="circle-value">
+
+                        <span id="scoreEE">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p id="levelEE"></p>
+
+            </div>
+
+
+
+            <div
+                id="cardDP"
+                class="result-card">
+
+                <h3>
+
+                    Деперсоналізація
+
+                </h3>
+
+                <div class="circle">
+
+                    <svg
+                        width="170"
+                        height="170">
+
+                        <circle
+                            class="bg"
+                            cx="85"
+                            cy="85"
+                            r="70"></circle>
+
+                        <circle
+                            id="circleDP"
+                            class="progress"
+                            cx="85"
+                            cy="85"
+                            r="70"></circle>
+
+                    </svg>
+
+                    <div class="circle-value">
+
+                        <span id="scoreDP">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p id="levelDP"></p>
+
+            </div>
+
+
+
+            <div
+                id="cardPA"
+                class="result-card">
+
+                <h3>
+
+                    Редукція особистих досягнень
+
+                </h3>
+
+                <div class="circle">
+
+                    <svg
+                        width="170"
+                        height="170">
+
+                        <circle
+                            class="bg"
+                            cx="85"
+                            cy="85"
+                            r="70"></circle>
+
+                        <circle
+                            id="circlePA"
+                            class="progress"
+                            cx="85"
+                            cy="85"
+                            r="70"></circle>
+
+                    </svg>
+
+                    <div class="circle-value">
+
+                        <span id="scorePA">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p id="levelPA"></p>
+
+            </div>
+
+        </div>
+
+        <div
+            id="interpretation"
+            class="interpretation">
+
+        </div>
+
+        <button
+            id="restartBtn"
+            class="primary-btn">
+
+            Пройти тест ще раз
+
+        </button>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
