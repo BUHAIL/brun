@@ -801,73 +801,105 @@ else if(results.PA.level.color==="yellow"){
 const pa = INTERPRETATION.PA[paKey];
 
 
-    box.innerHTML = `
+box.innerHTML = `
 
-<h3>
-
-Розшифровка результатів
-
-</h3>
+<h3>Розшифровка результатів</h3>
 
 <div class="accordion">
 
-<div class="accordion-item open">
+    <div class="accordion-item open">
 
-<div class="accordion-header">
+        <div class="accordion-header">
 
-Емоційне виснаження
+            <div class="accordion-title">
 
-<span>${ee.title}</span>
+                <div class="accordion-name">
 
-</div>
+                    Емоційне виснаження
 
-<div class="accordion-body">
+                </div>
 
-${ee.description}
+                <div class="accordion-level">
 
-</div>
+                    ${ee.title}
 
-</div>
+                </div>
 
+            </div>
 
+        </div>
 
-<div class="accordion-item open">
+        <div class="accordion-body">
 
-<div class="accordion-header">
+            ${ee.description}
 
-Деперсоналізація
+        </div>
 
-<span>${dp.title}</span>
-
-</div>
-
-<div class="accordion-body">
-
-${dp.description}
-
-</div>
-
-</div>
+    </div>
 
 
 
-<div class="accordion-item open">
+    <div class="accordion-item open">
 
-<div class="accordion-header">
+        <div class="accordion-header">
 
-Редукція особистих досягнень
+            <div class="accordion-title">
 
-<span>${pa.title}</span>
+                <div class="accordion-name">
 
-</div>
+                    Деперсоналізація
 
-<div class="accordion-body">
+                </div>
 
-${pa.description}
+                <div class="accordion-level">
 
-</div>
+                    ${dp.title}
 
-</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-body">
+
+            ${dp.description}
+
+        </div>
+
+    </div>
+
+
+
+    <div class="accordion-item open">
+
+        <div class="accordion-header">
+
+            <div class="accordion-title">
+
+                <div class="accordion-name">
+
+                    Редукція особистих досягнень
+
+                </div>
+
+                <div class="accordion-level">
+
+                    ${pa.title}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-body">
+
+            ${pa.description}
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -1040,38 +1072,25 @@ function getPA(score){
 
 function initAccordion(){
 
-    const items=document.querySelectorAll(
-
-        ".accordion-item"
-
-    );
+    const items = document.querySelectorAll(".accordion-item");
 
     items.forEach(item=>{
 
-        const header=
+        const header = item.querySelector(".accordion-header");
 
-            item.querySelector(
-
-                ".accordion-header"
-
-            );
-
-        header.onclick=()=>{
-
-            items.forEach(el=>{
-
-                if(el!==item){
-
-                    el.classList.remove("open");
-
-                }
-
-            });
+        header.addEventListener("click",()=>{
 
             item.classList.toggle("open");
 
-        };
+        });
 
     });
+
+}
+const first = document.querySelector(".accordion-item");
+
+if(first){
+
+    first.classList.add("open");
 
 }
