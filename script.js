@@ -503,7 +503,7 @@ const INTERPRETATION = {
 
         low:{
 
-            title:"🟢 Низький рівень",
+            title:"🟢 Низький рівень емоційного виснаження",
 
             description:`
 
@@ -531,7 +531,7 @@ const INTERPRETATION = {
 
         medium:{
 
-            title:"🟡 Середній рівень",
+            title:"🟡 Середній рівень емоційного виснаження",
 
             description:`
 
@@ -559,7 +559,7 @@ const INTERPRETATION = {
 
         high:{
 
-            title:"🔴 Високий рівень",
+            title:"🔴 Високий рівень емоційного виснаження",
 
             description:`
 
@@ -589,7 +589,7 @@ const INTERPRETATION = {
 
         low:{
 
-            title:"🟢 Низький рівень",
+            title:"🟢 Високе відчуття власної ефективності",
 
             description:`
 
@@ -611,7 +611,7 @@ const INTERPRETATION = {
 
         medium:{
 
-            title:"🟡 Середній рівень",
+            title:"🟡 Середнє відчуття власної ефективності",
 
             description:`
 
@@ -633,7 +633,7 @@ const INTERPRETATION = {
 
         high:{
 
-            title:"🔴 Високий рівень",
+            title:"🔴 Низьке відчуття власної ефективності",
 
             description:`
 
@@ -659,7 +659,7 @@ const INTERPRETATION = {
 
     low:{
 
-        title:"🟢 Низьке Відчуття власної ефективності",
+        title:"🟢 Високе Відчуття власної ефективності",
 
         description:`
 
@@ -711,7 +711,7 @@ const INTERPRETATION = {
 
     high:{
 
-        title:"🔴 Високе відчуття власної ефективності",
+        title:"🔴 Низьке відчуття власної ефективності",
 
         description:`
 
