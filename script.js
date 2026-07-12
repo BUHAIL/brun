@@ -659,7 +659,7 @@ const INTERPRETATION = {
 
     low:{
 
-        title:"🟢 Низька редукція",
+        title:"🟢 Низьке Відчуття власної ефективності",
 
         description:`
 
@@ -687,7 +687,7 @@ const INTERPRETATION = {
 
     medium:{
 
-        title:"🟡 Середня редукція",
+        title:"🟡 Середнє відчуття власної ефективності",
 
         description:`
 
@@ -711,7 +711,7 @@ const INTERPRETATION = {
 
     high:{
 
-        title:"🔴 Висока редукція",
+        title:"🔴 Високе відчуття власної ефективності",
 
         description:`
 
@@ -847,7 +847,7 @@ box.innerHTML = `
 
                 <div class="accordion-name">
 
-                    Деперсоналізація
+                    Емоційне відсторонення
 
                 </div>
 
@@ -879,7 +879,7 @@ box.innerHTML = `
 
                 <div class="accordion-name">
 
-                    Редукція особистих досягнень
+                    Відчуття власної ефективності
 
                 </div>
 
@@ -1036,7 +1036,7 @@ function getPA(score){
 
         return{
 
-            text:"🔴 Висока редукція",
+            text:"🔴 Високе відчуття власної ефективності",
 
             color:"red"
 
@@ -1048,7 +1048,7 @@ function getPA(score){
 
         return{
 
-            text:"🟡 Середня редукція",
+            text:"🟡 Середнє відчуття власної ефективності",
 
             color:"yellow"
 
@@ -1058,7 +1058,7 @@ function getPA(score){
 
     return{
 
-        text:"🟢 Низька редукція",
+        text:"🟢 Низьке відчуття власної ефективності",
 
         color:"green"
 
